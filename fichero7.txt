@@ -1,1 +1,2 @@
-fichero 7
+el fichero 7 contiene texto
+*** un cambio ***
