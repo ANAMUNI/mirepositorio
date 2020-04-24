@@ -1,11 +1,11 @@
-'''
-las constantes se ponen en mayúsculas
-ALGO QUE NO PUEDE CAMBIAR, SE COJE  PERO NO SE MODIFIICA
-SE  COPI LA  LINEA DE INSERT DE  SQL y se pone %s para dar luego los valores
-'''
 
-SQL_INSERCION_ACCESORIOS = "INSERT INTO tabla_accesorios (id, mascota, accesorio, talla, tipo, precio) VALUES (NULL, %s, %s, %s, %s, %s);"  
 
-SQL_SELECT_ACCESORIOS ="SELECT * FROM tabla_accesorios"
+SQL_INSERCION_ACCESORIO = "INSERT INTO tabla_accesorios (id, mascota, accesorio, talla, tipo, precio, ofertas, cliente, envio) VALUES (NULL, %s, %s, %s, %s, %s, %s, %s, %s);" 
 
-SQL_BORRAR_ACCESORIOS = "DELETE FROM tabla_accesorios WHERE id = %s;"
+SQL_SELECT_ACCESORIOS ="SELECT  id, mascota, accesorio, tipo  FROM tabla_accesorios"
+
+SQL_BORRAR_ACCESORIO = "DELETE FROM tabla_accesorios WHERE id = %s;"
+
+SQL_OBTENER_ACCESORIO_POR_ID = "SELECT * FROM tabla_accesorios WHERE id = %s;"
+
+SQL_GUARDAR_CAMBIOS_ACCESORIO = "UPDATE tabla_accesorios SET mascota = %s, accesorio = %s, talla= %s, tipo = %s, precio = %s, ofertas= %s, cliente = %s, envio = %s WHERE id  = %s;"
