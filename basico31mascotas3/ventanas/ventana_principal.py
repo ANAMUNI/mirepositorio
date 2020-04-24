@@ -2,11 +2,13 @@
 
 # Form implementation generated from reading ui file 'ventana_principal.ui'
 #
-# Created by: PyQt5 UI code generator 5.9.2
+# Created by: PyQt5 UI code generator 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
 
+
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -62,7 +64,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label_titulo = QtWidgets.QLabel(self.centralwidget)
-        self.label_titulo.setGeometry(QtCore.QRect(180, 140, 251, 41))
+        self.label_titulo.setGeometry(QtCore.QRect(130, 140, 341, 41))
         font = QtGui.QFont()
         font.setFamily("Aharoni")
         font.setPointSize(14)
@@ -116,8 +118,8 @@ class Ui_MainWindow(object):
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
-        self.submenu_registrar_accesorios = QtWidgets.QAction(MainWindow)
-        self.submenu_registrar_accesorios.setObjectName("submenu_registrar_accesorios")
+        self.submenu_insertar_accesorio = QtWidgets.QAction(MainWindow)
+        self.submenu_insertar_accesorio.setObjectName("submenu_insertar_accesorio")
         self.submenu_listar_accesorios = QtWidgets.QAction(MainWindow)
         self.submenu_listar_accesorios.setObjectName("submenu_listar_accesorios")
         self.submenu_inicio = QtWidgets.QAction(MainWindow)
@@ -126,10 +128,10 @@ class Ui_MainWindow(object):
         self.submenu_list_widget_accesorios.setObjectName("submenu_list_widget_accesorios")
         self.submenu_table_widget_accesorios = QtWidgets.QAction(MainWindow)
         self.submenu_table_widget_accesorios.setObjectName("submenu_table_widget_accesorios")
-        self.menuCamisetas.addAction(self.submenu_registrar_accesorios)
+        self.menuCamisetas.addAction(self.submenu_insertar_accesorio)
         self.menuCamisetas.addAction(self.submenu_listar_accesorios)
-        self.menuCamisetas.addAction(self.submenu_table_widget_accesorios)
         self.menuCamisetas.addAction(self.submenu_inicio)
+        self.menuCamisetas.addAction(self.submenu_table_widget_accesorios)
         self.menuCamisetas.addAction(self.submenu_list_widget_accesorios)
         self.menuCamisetas.addSeparator()
         self.menubar.addAction(self.menuCamisetas.menuAction())
@@ -140,14 +142,23 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_titulo.setText(_translate("MainWindow", "ACCESORIOS DE MASCOTAS"))
+        self.label_titulo.setText(_translate("MainWindow", "      ACCESORIOS DE MASCOTAS"))
         self.label.setText(_translate("MainWindow", " * PERROS"))
         self.label_2.setText(_translate("MainWindow", "* GATOS"))
         self.label_3.setText(_translate("MainWindow", "* HAMSTER"))
         self.menuCamisetas.setTitle(_translate("MainWindow", "Accesorios"))
-        self.submenu_registrar_accesorios.setText(_translate("MainWindow", "registrar accesorios"))
+        self.submenu_insertar_accesorio.setText(_translate("MainWindow", "Insertar Accesorio"))
         self.submenu_listar_accesorios.setText(_translate("MainWindow", "listar accesorios"))
         self.submenu_inicio.setText(_translate("MainWindow", "inicio"))
-        self.submenu_list_widget_accesorios.setText(_translate("MainWindow", "ventana_list_widget"))
-        self.submenu_table_widget_accesorios.setText(_translate("MainWindow", "ventana_table_widget"))
+        self.submenu_list_widget_accesorios.setText(_translate("MainWindow", "listado_list_widget"))
+        self.submenu_table_widget_accesorios.setText(_translate("MainWindow", "editar_table_widget"))
 
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())

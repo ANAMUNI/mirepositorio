@@ -153,9 +153,9 @@
    <widget class="QLabel" name="label_titulo">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>130</x>
       <y>140</y>
-      <width>251</width>
+      <width>341</width>
       <height>41</height>
      </rect>
     </property>
@@ -172,7 +172,7 @@
      <string notr="true">background-color: rgb(255, 240, 229);</string>
     </property>
     <property name="text">
-     <string>ACCESORIOS DE MASCOTAS</string>
+     <string>      ACCESORIOS DE MASCOTAS</string>
     </property>
    </widget>
    <widget class="Line" name="line">
@@ -271,23 +271,23 @@
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuCamisetas">
+   <widget class="QMenu" name="menu">
     <property name="title">
      <string>Accesorios</string>
     </property>
-    <addaction name="submenu_registrar_accesorios"/>
+    <addaction name="submenu_insertar_accesorio"/>
     <addaction name="submenu_listar_accesorios"/>
-    <addaction name="submenu_table_widget_accesorios"/>
     <addaction name="submenu_inicio"/>
+    <addaction name="submenu_table_widget_accesorios"/>
     <addaction name="submenu_list_widget_accesorios"/>
     <addaction name="separator"/>
    </widget>
-   <addaction name="menuCamisetas"/>
+   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="submenu_registrar_accesorios">
+  <action name="submenu_insertar_accesorio">
    <property name="text">
-    <string>registrar accesorios</string>
+    <string>Insertar Accesorio</string>
    </property>
   </action>
   <action name="submenu_listar_accesorios">
@@ -302,12 +302,12 @@
   </action>
   <action name="submenu_list_widget_accesorios">
    <property name="text">
-    <string>ventana_list_widget</string>
+    <string>listado_list_widget</string>
    </property>
   </action>
   <action name="submenu_table_widget_accesorios">
    <property name="text">
-    <string>ventana_table_widget</string>
+    <string>editar_table_widget</string>
    </property>
   </action>
  </widget>
